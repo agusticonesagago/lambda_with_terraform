@@ -1,0 +1,9 @@
+# Ignore Terraform specific files and directories
+.terraform*
+tfplan.out
+
+# Ignore Lambda deployment package
+lambda.zip
+
+# Ignore Terraform state files
+*.tfstate*
