@@ -11,7 +11,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, str]:
     Returns:
         Response object with a message.
     """
-    message = 'Hello {}!'.format(event['key1'])
+    message = 'Hello {}!'.format(event['name'])
     return {
         'message': message
     }
