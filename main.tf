@@ -123,6 +123,7 @@ resource "aws_api_gateway_resource" "example_api_resource" {
 data "aws_lambda_function" "existing_lambda" {
   function_name = "Authorizer"
 }
+
 output "lambda_invoke_arn" {
   value = data.aws_lambda_function.existing_lambda.invoke_arn
 }
